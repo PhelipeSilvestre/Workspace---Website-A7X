@@ -1,0 +1,126 @@
+body {
+  font-family: sans-serif;
+}
+
+header {
+  position: relative;
+  background-color: #000; /* Mudança para preto */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  color: #fff; /* Mudança para branco */
+}
+
+#title {
+  font-size: 24px;
+  font-family: "Roboto Condensed", sans-serif;
+}
+.logo {
+  flex: 1;
+}
+
+nav ul.menu {
+  list-style-type: none;
+}
+
+nav ul.menu li {
+  display: inline-block;
+  margin-right: 20px;
+}
+nav ul.menu li a {
+  color: #fff; /* Define a cor dos links para branco */
+  text-decoration: none; /* Remove a sublinhado dos links */
+}
+
+nav ul.menu li a:hover {
+  color: #ffd700; /* Define a cor quando o link é hover para um amarelo dourado */
+}
+.logo-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute; /* Define a imagem como posição absoluta */
+  left: 50%; /* Define a posição inicial para o centro horizontal */
+  transform: translateX(
+    -50%
+  ); /* Move a imagem 50% do seu próprio tamanho para a esquerda para centralizá-la */
+}
+
+.logo-image img {
+  max-width: 150px;
+  height: auto;
+}
+#image {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  height: auto;
+}
+#img-caption {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.bio-summary {
+  display: flex;
+}
+
+.bio-image {
+  flex: 1;
+  margin-right: 40px; /* Espaço entre a imagem e o texto */
+  margin-left: 40px;
+  margin-top: 30px;
+}
+
+.bio-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.bio-text {
+  flex: 3;
+  margin-right: 80px;
+}
+
+.bio-text h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.bio-text p {
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: justify;
+}
+.divider {
+  border-top: 5px solid #ccc; /* Define uma linha horizontal de 1 pixel com cor cinza */
+  margin: 20px 0; /* Adiciona espaço acima e abaixo da linha */
+}
+.card-container {
+  display: flex;
+  justify-content: space-between; /* Distribui os cards uniformemente na linha */
+  flex-wrap: wrap; /* Faz com que os cards quebrem para a próxima linha se necessário */
+}
+
+.card {
+  flex: 1;
+  width: 18rem; /* Define o tamanho fixo do card */
+  margin-right: 20px; /* Adiciona espaço entre os cards */
+}
+.card img {
+  width: 100%; /* Faz com que a imagem dentro do card ocupe todo o espaço disponível */
+  height: 18rem; /* Garante que a proporção da imagem seja mantida */
+  object-fit: cover; /* Mantém a proporção da imagem e corta para caber */
+}
+.members {
+  font-size: 24px;
+  font-family: "Roboto Condensed", sans-serif;
+  text-align: center;
+}
+.background-black {
+  background-color: #000;
+  color: #fff;
+}
