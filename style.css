@@ -144,6 +144,7 @@ nav ul.menu li a:hover {
 .riv-image img {
   max-width: 100%;
   height: auto;
+  border-radius: 5px 5px 5px 5px;
 }
 
 .riv-text {
@@ -161,3 +162,46 @@ nav ul.menu li a:hover {
   font-size: 16px;
   line-height: 1.6;
   text-align: justify;
+}
+.disc-title {
+  font-size: 24px;
+  font-family: "Roboto Condensed", sans-serif;
+  text-align: center;
+}
+.album {
+  margin-top: 50px;
+  display: flex;
+}
+.album img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 5px 5px 5px 5px;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+.album-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-left: 50px;
+  text-align: center;
+}
+.album-text {
+  font-size: 16px;
+  margin-left: 50px;
+  text-align: justify;
+  margin-right: 80px;
+}
+@media (max-width: 768px) {
+  .album {
+    flex-direction: column;
+  }
+}
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin-top: 150px;
+}
